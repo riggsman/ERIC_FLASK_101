@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block title%}
+<title>{{title_data[0]}}</title>
+{%endblock%}
+
+{%block content%}
+<h1>WELCOME</h1>
+
+<p>Welcome to the {{title_data[1]}} application.</p>
+
+<p>This is a simple example of a Flask web application with a basic homepage.</p>
+
+<p>To see the other pages, please navigate to the links below:</p>
+
+<ul>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+</ul>
+
+{% endblock %}
